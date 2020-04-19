@@ -1,0 +1,142 @@
+body 
+{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.accueil
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#page 
+{
+    position: relative;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    @include transition(.5s);
+	.offcanvas & {
+		overflow: hidden;	
+		position: absolute;
+		
+		&:after {
+			@include transition(2s);
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 101;
+			background: gray;
+			content: "";
+		}
+	}
+}
+#container 
+{
+    width: 100%;
+    float: left;
+    height: 900px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.Title 
+{
+    margin-bottom: 3em;
+    margin: 20px 0 0 0;
+    padding: 0;
+    
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.Title a 
+{
+  font-size: 30px;
+  color: Black;
+  position: relative;
+}
+h2{ font-size: 25px; color:Black;}
+
+#compte_a_rebours
+{
+  display: inline-block;
+  width: 35em;
+  height: 120px;
+  position: relative;
+  margin: 0 5px;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  padding-top: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  color: RED;
+  text-align: center;
+  background: grey;
+  border: 2px solid black;
+  border-radius:10%;
+  @media screen and (max-width: $screen-md){
+    padding: 0 20px;
+}
+@media screen and (max-width: $screen-sm){
+    width: 100%;
+}
+}
+
+.btn {
+  margin-right: .5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 20%;
+  transition: 0.5s;
+  padding: 8px 20px;
+  background-color: black;
+
+}
+
+.social-icons {
+  margin-top: 3em;
+  padding: 1em;
+}
+.social-icons  {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.social-icons  a {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.social-icons  a i {
+  font-size: 40px;
+}
+.social-icons  a:hover, .social-icons  a:focus {
+  color: grey(0, 157, 248);
+}
+@media screen and (max-width: 768px) 
+  {
+    .Title {
+      padding: 20px 0;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #compte_a_rebours {
+      padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #compte_a_rebours {
+      width: 100%;
+    }
+  }
