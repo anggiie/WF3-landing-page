@@ -1,0 +1,64 @@
+.countdown-wrap, .bg-cover {
+  width: 50%;
+  padding-top: 100px;
+  float: left;
+  background: #80808060;
+  
+}
+@media screen and (max-width: 992px) {
+  .countdown-wrap, .bg-cover {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .countdown-wrap, .bg-cover {
+    width: 100%;
+  }
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .bg-cover {
+    display: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .display-t .display-tc h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .display-t .display-tc h2 {
+    font-size: 22px;
+  }
+}
+.display-t .display-tc h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 480px) {
+  .display-t .display-tc h2 {
+    font-size: 16px;
+  }
+}
+
+.row-pb-md {
+  padding-bottom: 4em !important;
+}
+
+.row-pb-sm {
+  padding-bottom: 2em !important;
+}
+
+
+
